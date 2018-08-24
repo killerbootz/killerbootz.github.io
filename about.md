@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is supposed to be about me, but hey what are you up to today? How are you doing?
+What about me? What about you?
 
 ### More Information
 
-Geeze this thing is chatty huh?
+I'm just a guy that knows that suck'n at something is the first step to being sorta good at something.
 
 ### Contact me
 
