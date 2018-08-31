@@ -60,7 +60,7 @@ There's also another user account "bulldogadmin" here. And a hidden admin direct
 
 ![Bulldog Hidden]({{ site.url }}/images/Bulldog/hidden_bulldogadmin.JPG)
 
-Hmm, running that app gets me nowhere. Copying it out and running it gets me nowhere as well. This stumped me for awhile and caused me to look around some more. I found another hidden AV directory with a Python script owned by root, but it didn't look like anything was set to run it. This would have been a good avenue since it was writable.  
+Hmm, running the customPermissionApp gets me nowhere. Copying it out and running it gets me nowhere as well. This stumped me for awhile and caused me to look around some more. I found another hidden AV directory with a Python script owned by root, but it didn't look like anything was set to run it. This would have been a good avenue since it was writable.  
 I ended up going back to the customPermissionApp thinking there was something here I was missing. I ran strings against it to see if it would reveal anything and BAM!
 
 ![Bulldog CustomApp]({{ site.url }}/images/Bulldog/customApp.JPG)
