@@ -28,3 +28,7 @@ Both Nikto & Dirb revealed a "/dev" directory supposedly put there by one of the
 
 ![Bulldog DevHash]({{ site.url }}/images/Bulldog/dev_hashes.JPG)
 
+After feeding the hashes through John-the-Ripper I had a hit fairly quickly for the Nick account:
+
+![Bulldog NickPass]({{ site.url }}/images/Bulldog/nickpass.JPG)
+
