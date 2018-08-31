@@ -38,7 +38,7 @@ From here we can login as Nick to the Django admin page, then jump to the webshe
 
 Perfect. Let's see what happens when we enter a command we're not supposed to:
 
-![Bulldog Caught]({{ site.url }}/images/Bulldog/postauth_caught.JPG)
+![Bulldog Caught]({{ site.url }}/images/Bulldog/caught.JPG)
 
 Ya got me.
 
