@@ -53,7 +53,7 @@ Nice, now we can make a quick Bash reverse shell and upload it using wget to /tm
 
 Ok, so quick look around. No exceptionally low-hanging fruit for a quick win. Hmm, I do see some hashes for users (including an admin account) in a SQLite db file in the Django home directory:
 
-![Bulldog DB]({{ site.url }}/images/Bulldog/db_back.JPG)
+![Bulldog DB]({{ site.url }}/images/Bulldog/db_bak.JPG)
 
 Maybe I'll run HashCat against those in a few.  
 There's also another user account "bulldogadmin" here. And a hidden admin directory:
