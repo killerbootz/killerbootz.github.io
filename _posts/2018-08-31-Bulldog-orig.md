@@ -71,9 +71,14 @@ I decided to try this on a few different accounts via SSH, but it ended up being
 
 ![Bulldog DPass]({{ site.url }}/images/Bulldog/django_superpass.JPG)
 
-From here it's just a matter of checking sudo privileges and elevating:
+From here it's just a matter of checking sudo privileges, elevating, and grabbing our flag:
 
 ![Bulldog Elevate]({{ site.url }}/images/Bulldog/elevate_flag.JPG)
 
 
-
+Time for some coffee  
+  .-~~-.
+,|`-__-'|
+||      |
+`|      |
+  `-__-'
