@@ -32,3 +32,7 @@ After feeding the hashes through John-the-Ripper I had a hit fairly quickly for 
 
 ![Bulldog NickPass]({{ site.url }}/images/Bulldog/nickpass.JPG)
 
+From here we can login as Nick to the Django admin page, then jump to the webshell link in the Dev page and bob's your uncle:
+
+![Bulldog Webshell]({{ site.url }}/images/Bulldog/postauth_webshell.JPG)
+
