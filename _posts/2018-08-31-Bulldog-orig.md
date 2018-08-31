@@ -65,7 +65,7 @@ I ended up going back to the customPermissionApp thinking there was something he
 
 ![Bulldog CustomApp]({{ site.url }}/images/Bulldog/customApp.JPG)
 
-This does look like a SUPER ultimate PASSWORD, (but not so hard to get). 
+SUPER ultimate PASSWORD!!, (but not so hard to get). 
 
 I decided to try this on a few different accounts via SSH, but it ended up being the password for the "django" account:
 
