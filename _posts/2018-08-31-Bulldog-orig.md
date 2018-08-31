@@ -71,7 +71,7 @@ I decided to try this on a few different accounts via SSH, but it ended up being
 
 ![Bulldog DPass]({{ site.url }}/images/Bulldog/django_superpass.JPG)
 
-Since we can tell from our "id" command earlier that django has sudo privileges, it's just a matter of checking sudo privileges (sudo -l), elevating, and grabbing our flag:
+Since we can tell from our "id" command earlier that django has sudo privileges, it's just a matter of checking those privileges with sudo -l, elevating, and grabbing our flag:
 
 ![Bulldog Elevate]({{ site.url }}/images/Bulldog/elevate_flag.JPG)
 
