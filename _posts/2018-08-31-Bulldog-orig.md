@@ -36,3 +36,12 @@ From here we can login as Nick to the Django admin page, then jump to the webshe
 
 ![Bulldog Webshell]({{ site.url }}/images/Bulldog/postauth_webshell.JPG)
 
+Perfect. Let's see what happens when we enter a command we're not supposed to:
+
+![Bulldog Caught]({{ site.url }}/images/Bulldog/postauth_caught.JPG)
+
+Ya got me.
+
+Ok, let's see if we can pipe our evil commands to the accepted ones to bypass getting caught:
+
+![Bulldog Bypass]({{ site.url }}/images/Bulldog/piped_bypass.JPG)
