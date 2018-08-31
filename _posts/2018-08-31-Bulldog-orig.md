@@ -40,7 +40,7 @@ Perfect. Let's see what happens when we enter a command we're not supposed to:
 
 ![Bulldog Caught]({{ site.url }}/images/Bulldog/caught.JPG)
 
-Ya got me.
+Ya got me. ╭∩╮(Ο_Ο)╭∩╮
 
 Ok, let's see if we can pipe our evil commands to the accepted ones to bypass getting caught:
 
