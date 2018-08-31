@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: About those bootz
 permalink: /about/
+published: true
 ---
 
-What about me? What about you?
+Just another eccentric security wonk that likes keeping to himself, the edge of society, and sanity in general.
 
-### More Information
 
-Fine, I'm just a guy that knows that suck'n at something is the first step to being sorta good at something.
-
-### Contact me
+### Contact:
 
 [Reach Out](mailto:killerbootz@gmail.com)
