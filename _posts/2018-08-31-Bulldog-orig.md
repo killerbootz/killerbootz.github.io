@@ -78,11 +78,4 @@ From here it's just a matter of checking sudo privileges, elevating, and grabbin
 This was very fun, and I think I may even go back to look for the second escalation point (hmm those SQLite hashes or AV file may have something to do with it...)
 
 
-For now it's time for some  
- 
-   ( (
-    ) )
-  ........
-  |      |]
-  \      /   
-   `----'
+Time for some coffee 
