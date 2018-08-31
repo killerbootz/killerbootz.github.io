@@ -24,7 +24,7 @@ Upon going to either web port we are presented with the following base page:
 
 ![Bulldog Notice]({{ site.url }}/images/Bulldog/basepage.JPG)
 
-Both Nikto & Dirb revealed a "/dev" directory supposedly put there by one of the staff. This included a link to a webshell, you have to be logged into the Django admin page, discovered at "/admin". The Dev page shows the team members (a.k.a. usernames), and a quick look at the source, shows SHA1 hashes left behind:
+Both Nikto & Dirb revealed a "/dev" directory supposedly put there by one of the staff. This included a link to a webshell, but apparently you have to be logged into the Django admin page, discovered at "/admin" to use it. The Dev page shows the team members (a.k.a. usernames), and a quick look at the source, shows SHA1 hashes left behind:
 
 ![Bulldog DevHash]({{ site.url }}/images/Bulldog/dev_hashes.JPG)
 
@@ -78,4 +78,4 @@ From here it's just a matter of checking sudo privileges, elevating, and grabbin
 This was very fun, and I think I may even go back to look for the second escalation point (hmm those SQLite hashes or AV file may have something to do with it...)
 
 
-Time for some coffee 
+Time for some coffee
