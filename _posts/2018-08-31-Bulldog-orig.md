@@ -45,3 +45,9 @@ Ya got me.
 Ok, let's see if we can pipe our evil commands to the accepted ones to bypass getting caught:
 
 ![Bulldog Bypass]({{ site.url }}/images/Bulldog/piped_bypass.JPG)
+
+Nice, now we can make a quick Bash reverse shell and upload it using wget to /tmp. Change the  permissions and run it to gain a low privilege shell:
+
+![Bulldog Rshell]({{ site.url }}/images/Bulldog/rshell.JPG)
+
+
