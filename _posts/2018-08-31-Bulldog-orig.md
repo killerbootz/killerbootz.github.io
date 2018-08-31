@@ -71,11 +71,11 @@ I decided to try this on a few different accounts via SSH, but it ended up being
 
 ![Bulldog DPass]({{ site.url }}/images/Bulldog/django_superpass.JPG)
 
-From here it's just a matter of checking sudo privileges, elevating, and grabbing our flag:
+Since we can tell from our "id" command earlier that django has sudo privileges, it's just a matter of checking sudo privileges (sudo -l), elevating, and grabbing our flag:
 
 ![Bulldog Elevate]({{ site.url }}/images/Bulldog/elevate_flag.JPG)
 
 This was very fun, and I think I may even go back to look for the second escalation point (hmm those SQLite hashes or AV file may have something to do with it...)
 
 
-Time for some coffee
+Time for some \̅_̅/̷̚ʾ
