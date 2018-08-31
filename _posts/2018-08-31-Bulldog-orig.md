@@ -51,3 +51,29 @@ Nice, now we can make a quick Bash reverse shell and upload it using wget to /tm
 ![Bulldog Rshell]({{ site.url }}/images/Bulldog/rshell.JPG)
 
 
+Ok, so quick look around. No exceptionally low-hanging fruit for a quick win. Hmm, I do see some hashes for users (including an admin account) in a SQLite db file in the Django home directory:
+
+![Bulldog DB]({{ site.url }}/images/Bulldog/db_back.JPG)
+
+Maybe I'll run HashCat against those in a few.  
+There's also another user account "bulldogadmin" here. And a hidden admin directory:
+
+![Bulldog Hidden]({{ site.url }}/images/Bulldog/hidden_bulldogadmin.JPG)
+
+Hmm, running that app gets me nowhere. Copying it out and running it gets me nowhere as well. This stumped me for awhile and caused me to look around some more. I found another hidden AV directory with a Python script owned by root, but it didn't look like anything was set to run it. This would have been a good avenue since it was writable.  
+I ended up going back to the customPermissionApp thinking there was something here I was missing. I ran strings against it to see if it would reveal anything and BAM!
+
+![Bulldog CustomApp]({{ site.url }}/images/Bulldog/customApp.JPG)
+
+This does look like a SUPER ultimate PASSWORD, (but not so hard to get). 
+
+I decided to try this on a few different accounts via SSH, but it ended up being the password for the "django" account:
+
+![Bulldog DPass]({{ site.url }}/images/Bulldog/django_superpass.JPG)
+
+From here it's just a matter of checking sudo privileges and elevating:
+
+![Bulldog Elevate]({{ site.url }}/images/Bulldog/elevate_flag.JPG)
+
+
+
