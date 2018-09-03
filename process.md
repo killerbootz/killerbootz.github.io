@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Process
+title: process
 permalink: /process/
 published: true
 ---
