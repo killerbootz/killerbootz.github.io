@@ -1,7 +1,7 @@
 ---
 layout: page
-title: TTP
+title: 'Tactics Techniques and Procedures (TTP):'
 permalink: /process/
 published: true
 ---
-## Tactics Techniques and Procedures (TTP)
+## CTF Process
