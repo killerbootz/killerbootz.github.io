@@ -4,4 +4,4 @@ title: 'Tactics Techniques and Procedures (TTP):'
 permalink: /process/
 published: true
 ---
-## CTF Process
+## Process
