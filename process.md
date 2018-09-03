@@ -4,4 +4,8 @@ title: Process
 permalink: /process/
 published: true
 ---
-##CTF Processs
+## CTF Process
+
+
+
+
