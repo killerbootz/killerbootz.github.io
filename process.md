@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CTF TTP
-permalink: /ttp/
+title: TTP
+permalink: /process/
 published: true
 ---
 ## CTF Process
