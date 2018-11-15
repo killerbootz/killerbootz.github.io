@@ -38,5 +38,16 @@ Reading these emails for each user can be done fairly easily using NetCat, Telne
 
 ![SS MindyEmail]({{ site.url }}/images/SolidState/mindy_email.JPG)  
 
+Perfect, so now we have a password! And we can login!  
+
+![SS MindyShell]({{ site.url }}/images/SolidState/mndy_shell.JPG)  
+
+....And we're hit with a restricted shell. Not surprising considering this is a new employee account.
+![SS MindyRbash]({{ site.url }}/images/SolidState/mindy_rbash.JPG)  
+
+So after clunking around for a bit in the shell trying a couple of different escape attempts, there was no joy. I ended up coming across [this slide](https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells?slide=9 "rbash escape") from SecTalks Melbourne 2016 that detailed using the __-t__ switch to execute commands before the restricted shell is set on the account. Using this method I was able to execute a vi session on the mindy account, set the shell using __:set shell=/bin/bash__ then __:shell__ and I was freeeeeeeeeeee!!  
+
+
+
 
 
