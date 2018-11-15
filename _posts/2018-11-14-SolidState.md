@@ -47,6 +47,8 @@ Perfect, so now we have a password! And we can login!
 
 So after clunking around for a bit in the shell trying a couple of different escape attempts, there was no joy. I ended up coming across [this slide](https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells?slide=9 "rbash escape") from SecTalks Melbourne 2016 that detailed using the __-t__ switch to execute commands before the restricted shell is set on the account. Using this method I was able to execute a vi session on the mindy account, set the shell using __:set shell=/bin/bash__ then __:shell__ and I was freeeeeeeeeeee!!  
 
+After completing this CTF I looked at a couple of walkthroughs and noticed that some others took the more-or-less obvious route of going back to the JAMES smtpd RCE from earlier (now that we have credentials it makes execution of commands much easier, this a new shell could be spawned using that method), but either method works.  
+
 
 
 
