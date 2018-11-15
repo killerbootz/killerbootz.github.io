@@ -53,10 +53,9 @@ After completing this CTF I looked at a couple of walkthroughs and noticed that 
 
 PrivEsc took to turning over rocks, and rocks of rocks, but not finding much. After some time I thought about focusing on JAMES smtpd again. Where was it executing from, taking a look through those directories etc. I found it by looking at the processes running under root (one of my privesc steps from earlier), and went to those locations to analyze further.  
 
-What I found was a tmp.py file that was owned by root and looked like it's function was to clean out /tmp. I had noticed before that one of my /tmp files was missing, but thought that it was my imagination. Now it looked like I had the culprit! After some failed attempts at a simple bash-based reverse shell I upped my game and converted to one more Python-friendly:
-
+What I found was a tmp.py file that was owned by root and looked like it's function was to clean out /tmp. I had noticed before that one of my /tmp files was missing, but thought that it was my imagination. Now it looked like I had the culprit! After some failed attempts at a simple bash-based reverse shell, and other methods I upped my game and converted to one more Python-friendly:
 
 ![SS Flag]({{ site.url }}/images/SolidState/flag.JPG)  
 
-
+Finally, fairly straight-forward, but I learn so much from each of these that none are a gimme. 
 
