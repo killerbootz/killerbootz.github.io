@@ -22,5 +22,9 @@ Ok, so when I see any service that looks like something other than generic (like
 
 ![SS Exploits]({{ site.url }}/images/Bulldog2/exploits.JPG)  
 
+Right off the bat I dive into the RCE, but notice that it's an authenticated RCE. Commands are executed in the context of a user that will already have access to the server and I do not have that access....yet.  
 
+Sometimes the best way is the way of patience, and learning (in fact it's usually the best way) and here that means perusing the paper "Exploiting Apache James Server 2.3.2". By looking at this we see that the Apache James server also has a remote administration port (TCP/4555). Hmm. I didn't see that on my initial nmap scan. Let's run an extended TCP scan...  
+
+![SS Nmap_Extend]({{ site.url }}/images/Bulldog2/nmap_extended_JAMES.JPG)  
 
