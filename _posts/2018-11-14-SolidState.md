@@ -49,6 +49,7 @@ So after clunking around for a bit in the shell trying a couple of different esc
 
 After completing this CTF I looked at a couple of walkthroughs and noticed that some others took the more-or-less obvious route of going back to the JAMES smtpd RCE from earlier (now that we have credentials it makes execution of commands much easier, this a new shell could be spawned using that method), but either method works.  
 
+PrivEsc took to turning over rocks, and rocks of rocks, but not finding much. After some time I thought about focusing on JAMES smtpd again. Where was it executing from, taking a look through those directories etc. I found it by looking at the processes running under root (one of my privesc steps from earlier), and went to those locations to analyze further.  
 
 
 
