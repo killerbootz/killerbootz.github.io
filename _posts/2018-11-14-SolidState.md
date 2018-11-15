@@ -38,7 +38,9 @@ Reading these emails for each user can be done fairly easily using NetCat, Telne
 
 ![SS MindyEmail]({{ site.url }}/images/SolidState/mindy_email.JPG)  
 
-Perfect, so now we have a password! And we can login!  
+Perfect, so now we have a password! And we can login! Hey, there's a user flag, cool!
+
+![SS Mindyflag]({{ site.url }}/images/SolidState/mindyFlag.JPG) 
 
 ![SS MindyShell]({{ site.url }}/images/SolidState/mndy_shell.JPG)  
 
