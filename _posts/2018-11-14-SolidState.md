@@ -27,3 +27,12 @@ Right off the bat I dive into the RCE, but notice that it's an authenticated RCE
 Sometimes the best way is the way of patience, and learning (in fact it's usually the best way) and here that means perusing the paper "Exploiting Apache James Server 2.3.2". By looking at this we see that the Apache James server also has a remote administration port (TCP/4555). Hmm. I didn't see that on my initial nmap scan. Let's run an extended TCP scan...  
 
 ![SS Nmap_Extend]({{ site.url }}/images/SolidState/nmap_extended_JAMES.JPG)
+
+
+Nice, hunches do pay off! Using NetCat to connect I was able to confirm that the default password was still set as well. Now let's view the available users configured and change their passwords so we can read their mail:
+
+![SS Nmap_James_Users]({{ site.url }}/images/SolidState/james_admin_users.JPG)  
+![SS Nmap_James_Users]({{ site.url }}/images/SolidState/james_admin_resetting_passwords.JPG)
+
+
+
