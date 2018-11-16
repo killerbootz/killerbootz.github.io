@@ -32,7 +32,7 @@ Sometimes the best way is the way of patience, and learning (in fact it's usuall
 Nice, hunches do pay off! Using NetCat to connect I was able to confirm that the default password was still set as well. Now let's view the available users configured and change their passwords so we can read their mail:
 
 ![SS James_Users]({{ site.url }}/images/SolidState/james_admin_users.JPG)  
-![SS James_Users]({{ site.url }}/images/SolidState/john_admin_resetting_passwords.JPG)
+![SS James_Users]({{ site.url }}/images/SolidState/john_admin_resetting_pwds.JPG)
 
 Reading these emails for each user can be done fairly easily using NetCat, Telnet or other similar methods, but is clunky. Python POP scripts are a-plenty and one good one is available [here](http://net-informations.com/python/net/pop3.htm "POP3 Pythong Script").  Using this I was able to cycle through the different users emails until I hit paydirt on Mindy's account (a new employee):
 
