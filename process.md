@@ -49,8 +49,35 @@ For loop example:
 	host -t a $server |grep "has address"
 	done
 
+****Python*** 
+Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow.
 
+#!/usr/bin/python
+import socket
 
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-ip", "--ipaddress", required=True,
+        help="IP Address of host")
+ap.add_argument("-p", "--port", required=True, type=int,
+        help="Port of host")
+args = vars(ap.parse_args())
+
+RHOST = args["ipaddress"]
+RPORT = args["port"]
+buffer=["A"]
+counter=100
+while len(buffer) <= 30:
+   buffer.append("A"*counter)
+   counter=counter+200
+for string in buffer:
+   print "Fuzzing with %s bytes" % len(string)
+   s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+   connect=s.connect((RHOST, RPORT))
+   s.send(string + '\r\n')
+   s.recv(1024)
+s.close()
 
 
 
