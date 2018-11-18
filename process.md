@@ -39,7 +39,13 @@ Of course this is just a small sample of tools, and very focused on web exploita
 - Using the "strings" command to pull readable strings from downloaded files. 
 - Utilizing a proxy (such as Burp Suite or Zed Attack Proxy) for analyzing, modifying, or fuzzing information from web services, although this blurrs the line a bit between a somewhat passive enumeration event and active information gathering event.
 
-Supplied tools and intuition are sometimes not enough however and the ability to script ones own tools for the occasion are necessary. These can be in any format that is 
+Supplied tools and intuition are sometimes not enough however and the ability to script ones own tools for the occasion are necessary. What are we if not adaptable, and so the formats used here have to be as varied as the targets. Below are some snippets of scripts that may make parts of these phases easier:
+
+__Script Snips:__
+
+****BASH****
+
+
 
 
 
