@@ -94,6 +94,9 @@ __BufferOverflow:__
 
 Some services will accept user input, but are not configured correct, in that they do not filter or allocate the correct input exactly so that sending more input than what the program is expecting will overwrite the programs execution flow and it will crash. If this is the case, sometimes a script can be created that controls this overflow behavior and instead of crashing the program, instructs it to do whatever the attacker wants (usually establishing a reverse shell or executing other malicious programs).  Below is a very short list of steps to BoF:  
 
-1. Use a "fuzzing" script to detemrmine if the program is susceptible to crashing at a determined input amount. 
-2. 
+1. Use a "fuzzing" script to detemrmine if the program is susceptible to crashing at a determined input amount. Use a debugger to ensure that the EIP register is overwritten with "A's".  
+2. Create a unique pattern (MetaSploit's pattern_create can be used) based on the amount of data that previously crashed. Send the pattern to the program via modified script and copy the pattern that appears in the EIP.  
+3. Use MetaSploit's pattern_offset tool to determine where in the unique value the EIP previously obtained, is included (what bit value, or point in the whole pattern was this bit that fit into the EIP is at).  
+4. Modify script to include the crashing byte amount and the offset (set a different value for this, only 4 "B's" or 42). Include trailing "C's" or 43 for padding. This will be a placeholder for shellcode.  
+5. 
         
