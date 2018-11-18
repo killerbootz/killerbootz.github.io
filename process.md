@@ -29,10 +29,18 @@ Phase 2: Conditional, based on output of Phase1, but often involves the followin
 | Web | Dirb | Web Directory Scanner |
 | Web | Wfuzz | Fuzzer |
 | Web | Fimap | Spider/LFI/RFI |
+| Web | Curl | Transfer Utility |
 | SMB | Enum4linux | Network Share Scanner |
 | Various | NetCat | Network Connection Utility |
 
 {:.mbtablestyle}
+
+Of course this is just a small sample of tools, and very focused on web exploitation. In many cases information can be gathered through investigative methods such as:
+- Source code viewing (web pages, or scripts on web pages).
+- Using the "strings" command to pull readable strings from downloaded files. 
+- Utilizing a proxy (such as Burp Suite or Zed Attack Proxy) for analyzing, modifying, or fuzzing information from web services, although this blurrs the line a bit between a passive enumeration event and active information gathering event.
+
+
 
 
 
