@@ -17,5 +17,5 @@ __Enumeration:__
 
 The never-ending process. The needle in the stack of needles. Here are some methods:
 
-	__Phase 1:__
+	Phase 1:
     	- Nmap: "Shotgun" scanning via the -A option (optional -sC for running default scripts).
