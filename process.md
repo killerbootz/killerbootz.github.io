@@ -8,10 +8,10 @@ published: true
 
 __Target Identification:__
 
-This is sometimes a given if running your own VM but if on the local network and needing to further identify targets:
-	- arp-scan --localnet
-    - ping sweep - using nmap -sn > insert subnet here
-    - passive listening using Wireshark/tcpdump
+This is sometimes a given if running your own VM but if on the local network and needing to further identify targets:  
+	- arp-scan --localnet  
+    - ping sweep - using nmap -sn > insert subnet here  
+    - passive listening using Wireshark/tcpdump  
 
 __Enumeration:__
 
@@ -141,12 +141,4 @@ net start
 sc query  
 wmic service get name,displayname,pathname,startmode |findstr /i "auto" |findstr /i /v "c:\windows\\" |findstr /i /v """ - Searches for unquoted service paths  
 Net user newuser newpass /add - Adds user  
-Net localgroup Administrators newuser /add - Adds user to group  
-
-
-
-
-
-
-
-        
+Net localgroup Administrators newuser /add - Adds user to group
