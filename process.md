@@ -50,7 +50,7 @@ For loop example:
 	done  
 
 ****Python***  
-Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow.  
+Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow:  
 
 #!/usr/bin/python  
 import socket  
@@ -142,3 +142,6 @@ sc query
 wmic service get name,displayname,pathname,startmode |findstr /i "auto" |findstr /i /v "c:\windows\\" |findstr /i /v """ - Searches for unquoted service paths  
 Net user newuser newpass /add - Adds user  
 Net localgroup Administrators newuser /add - Adds user to group
+
+
+
