@@ -120,8 +120,8 @@ __Compiling:__
 
 The following is a few commands used for compiling C:
 
-gcc inputFile.c -l outputFile
-
+gcc inputFile.c -l outputFile - Generic Linux compile.
+i686-w64-ming32-gcc inputFile.c -lws2_32 -o outputFile.exe - Linux compile for Windows executable.
 
 
 
