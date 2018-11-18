@@ -94,9 +94,17 @@ __BufferOverflow:__
 
 Some services will accept user input, but are not configured correct, in that they do not filter or allocate the correct input exactly so that sending more input than what the program is expecting will overwrite the programs execution flow and it will crash. If this is the case, sometimes a script can be created that controls this overflow behavior and instead of crashing the program, instructs it to do whatever the attacker wants (usually establishing a reverse shell or executing other malicious programs).  Below is a very short list of steps to BoF:  
 
+__BoF Phase1:__  
 1. Use a "fuzzing" script to detemrmine if the program is susceptible to crashing at a determined input amount. Use a debugger to ensure that the EIP register is overwritten with "A's".  
 2. Create a unique pattern (MetaSploit's pattern_create can be used) based on the amount of data that previously crashed. Send the pattern to the program via modified script and copy the pattern that appears in the EIP.  
 3. Use MetaSploit's pattern_offset tool to determine where in the unique value the EIP previously obtained, is included (what bit value, or point in the whole pattern was this bit that fit into the EIP is at).  
 4. Modify script to include the crashing byte amount and the offset (set a different value for this, only 4 "B's" or 42). Include trailing "C's" or 43 for padding. This will be a placeholder for shellcode.  
-5. 
+
+__BoF Phase2:__  
+5. Find bad characters that the program will not accept. If using Immunity debugger, the Mona module is good for this.  
+6. Use this information to perform wider search for memory locations to pivot to with "JMP ESP" instruction set. This can be done via Mona using "!mona jmp -r esp -cpb "badCharacters". Focus on modules with no DEP or ASLR protections.  
+7. Remember that the value found here must be placed into script used in Little-Endian format (backwards), or using a module that does this conversion for you.  
+
+__BoF Phase3:__  
+8. 
         
