@@ -121,6 +121,12 @@ The following is a few commands used for compiling C:
 gcc inputFile.c -l outputFile - Generic Linux compile.
 i686-w64-ming32-gcc inputFile.c -lws2_32 -o outputFile.exe - Linux compile for Windows executable.  
 
+__Restrictions:__  
+Sometimes low-privilege accounts are "jailed" so they are essentially locked into their home folder, or other program folders with only certain commands that are allowed. These jails can sometimes be broken out of via the following techniques:  
+- SSH: If accessing via SSH try appending the -t "command" parameter such as vi. Sometimes this can be executed as the login process takes place and reverting to the shell via the following methods:  
+- :set shell=/bin/bash followed by :shell 
+- :!/bin/sh  
+
 __PrivEsc:__  
 Inroads. Here are some quick and common enumeration steps once low privilege is obtained:
 
@@ -130,6 +136,7 @@ ls -al /etc/passwd - Can you write to the passwd file?
 ls -al /etc/*cron* - Check out all the crons
 sudo -l - Can this user do anything as root?  
 ps aux | grep root - What is running as root (or insert other user)?  
+
 
 Windows:  
 whoami /priv  
