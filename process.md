@@ -92,5 +92,8 @@ Small Web shell:
 
 __BufferOverflow:__  
 
+Some services will accept user input, but are not configured correct, in that they do not filter or allocate the correct input exactly so that sending more input than what the program is expecting will overwrite the programs execution flow and it will crash. If this is the case, sometimes a script can be created that controls this overflow behavior and instead of crashing the program, instructs it to do whatever the attacker wants (usually establishing a reverse shell or executing other malicious programs).  Below is a very short list of steps to BoF:  
 
+1. Use a "fuzzing" script to detemrmine if the program is susceptible to crashing at a determined input amount. 
+2. 
         
