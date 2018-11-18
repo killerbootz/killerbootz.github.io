@@ -44,7 +44,7 @@ Supplied tools and intuition are sometimes not enough however and the ability to
 __Script Snips:__
 
 ****BASH***  
-For loop example:
+For loop example:  
 	for server in $(cat $1 );do
 	host -t a $server |grep "has address"
 	done
