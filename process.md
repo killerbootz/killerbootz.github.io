@@ -45,9 +45,9 @@ __Script Snips:__
 
 ****BASH***  
 For loop example:  
-	for server in $(cat $1 );do
-	host -t a $server |grep "has address"
-	done
+	for server in $(cat $1 );do  
+	host -t a $server |grep "has address"  
+	done  
 
 ****Python*** 
 Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow.
