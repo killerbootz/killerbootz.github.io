@@ -112,5 +112,17 @@ Do not forget to include the bad characters you have found via the -b option.
 9. When testing the final script NOPs (\x90) may need to be added for additional padding.  
 10. Test offline and not against target before the actual attack target.  
 
+__Exploitation:__  
+
+After gathering substantial amount of information about targets, and finding no other footholds a search for public exploitation is in order. This can be done via simple Google search or sites like [Exploit-DB](https://www.exploit-db.com/). The exploits found need to be looked at carefully. Versioning is very important. Bitness is very important for compiling and of course, looking over the code to ensure no addtional side exploitation of the attacking matchine is hidden is important too.  
+
+__Compiling:__  
+
+The following is a few commands used for compiling C:
+
+gcc inputFile.c -l outputFile
+
+
+
 
         
