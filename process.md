@@ -127,6 +127,9 @@ Sometimes low-privilege accounts are "jailed" so they are essentially locked int
 - :set shell=/bin/bash followed by :shell 
 - :!/bin/sh  
 
+Another method (and sometimes one still needed regardless) is setting the PATH environmental variable to include a non-restricted command path like /usr/bin. This can be accomplished via the following:  
+- export PATH=/bin:/usr/bin:$PATH  
+
 __PrivEsc:__  
 Inroads. Here are some quick and common enumeration steps once low privilege is obtained:
 
