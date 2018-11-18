@@ -23,10 +23,19 @@ Phase 1:
 
 Phase 2: Conditional, based on output of Phase1, but often involves the following enumeration tools to find more information on resources the target is exposing:
 
-| Item | Description | Price |
+| Service | Tool | Description |
 | --- | --- | ---: |
-| item1 | item1 description | 1.00 |
-| item2 | item2 description | 100.00 |
+| Web | Nikto | Vuln Scanner |
+| Web | Dirb | Web Directory Scanner |
+| Web | Wfuzz | Fuzzer |
+| Web | Fimap | Spider/LFI/RFI |
+| SMB | Enum4linux | Network Share Scanner |
+| Various | NetCat | Network Connection Utility |
+
+Of course these are just a sampling of some tools to start, and very focused on web exploitation. 
+
 {:.mbtablestyle}
+
+
 
         
