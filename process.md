@@ -32,8 +32,6 @@ Phase 2: Conditional, based on output of Phase1, but often involves the followin
 | SMB | Enum4linux | Network Share Scanner |
 | Various | NetCat | Network Connection Utility |
 
-Of course these are just a sampling of some tools to start, and very focused on web exploitation. 
-
 {:.mbtablestyle}
 
 
