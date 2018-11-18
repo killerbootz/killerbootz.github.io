@@ -50,7 +50,7 @@ For loop example:
 	done  
 
 ****Python*** 
-Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow.
+Simple socket script (with options) for sending incrementing "A's" for determining buffer overflow.  
 
 #!/usr/bin/python
 import socket
