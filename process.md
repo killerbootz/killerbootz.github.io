@@ -113,15 +113,39 @@ Do not forget to include the bad characters you have found via the -b option.
 10. Test offline and not against target before the actual attack target.  
 
 __Exploitation:__  
-
 After gathering substantial amount of information about targets, and finding no other footholds a search for public exploitation is in order. This can be done via simple Google search or sites like [Exploit-DB](https://www.exploit-db.com/). The exploits found need to be looked at carefully. Versioning is very important. Bitness is very important for compiling and of course, looking over the code to ensure no addtional side exploitation of the attacking matchine is hidden is important too.  
 
 __Compiling:__  
-
 The following is a few commands used for compiling C:
 
 gcc inputFile.c -l outputFile - Generic Linux compile.
-i686-w64-ming32-gcc inputFile.c -lws2_32 -o outputFile.exe - Linux compile for Windows executable.
+i686-w64-ming32-gcc inputFile.c -lws2_32 -o outputFile.exe - Linux compile for Windows executable.  
+
+__PrivEsc:__  
+Inroads. Here are some quick and common enumeration steps once low privilege is obtained:
+
+Linux:  
+find / -perm -u=s -type f 2>/dev/null  - SUID search  
+ls -al /etc/passwd - Can you write to the passwd file?  
+ls -al /etc/*cron* - Check out all the crons
+sudo -l - Can this user do anything as root?  
+ps aux | grep root - What is running as root (or insert other user)?  
+
+Windows:  
+whoami /priv  
+cmdkey /list  
+accesschk.exe -accepteula -qwsu "Everyone" *  - Checks for writable files and folders  
+accesschk.exe -uwcqv "Everyone" * - Checks for weak service permissions  
+wmic service list brief - Service list  
+net start  
+sc query  
+wmic service get name,displayname,pathname,startmode |findstr /i "auto" |findstr /i /v "c:\windows\\" |findstr /i /v """ - Searches for unquoted service paths  
+Net user newuser newpass /add - Adds user  
+Net localgroup Administrators newuser /add - Adds user to group  
+
+
+
+
 
 
 
